@@ -1,7 +1,6 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  dir: 'wpsql'
   args: ['build', '-t', 'gcr.io/civic-gate-353504/bima-image/wp-sql:$COMMIT_SHA', '.']
   
 # Push the container image to Container Registry
