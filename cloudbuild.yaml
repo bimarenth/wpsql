@@ -30,6 +30,9 @@ steps:
 
 images:
 - 'gcr.io/civic-gate-353504/bima-image/wp-sql'
+ ports:
+    - name: http1
+      containerPort: 8080
 
 options:
   logging: CLOUD_LOGGING_ONLY
