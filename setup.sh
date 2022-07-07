@@ -17,7 +17,7 @@ gcloud config set compute/region $REGION
 gcloud config set compute/zone $ZONE
 
 # Create a minimal (micro) MySQL instance
-gcloud sql instances create $CLOUDSQL_INSTANCE --tier=$CLOUDSQL_TIER --region=us-central1
+gcloud sql instances create $CLOUDSQL_INSTANCE --tier=$CLOUDSQL_TIER --region=asia-southeast2
 gcloud sql users set-password root --host % --instance $CLOUDSQL_INSTANCE --password $ROOT_PSWD
 
 # Create a database called "wordpress" and create a user account
