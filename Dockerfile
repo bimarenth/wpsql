@@ -1,7 +1,7 @@
 # See https://hub.docker.com/_/wordpress/ for the latest
 FROM wordpress:5.3.2-php7.4-apache
 
-EXPOSE 8080
+# EXPOSE 8080
 # Use the PORT environment variable in Apache configuration files.
 RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
 # wordpress conf
